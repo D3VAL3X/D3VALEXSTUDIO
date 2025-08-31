@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D3VALEXSTUDIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0a0a0f, #000);
+    }
+    .neon-text {
+      color: #00fff7;
+      text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #b026ff;
+    }
+    .neon-btn {
+      background: linear-gradient(90deg, #00fff7, #b026ff);
+      box-shadow: 0 0 10px #00fff7, 0 0 20px #b026ff;
+    }
+  </style>
+</head>
+<body class="h-screen flex items-center justify-center">
+  <section class="text-center px-4">
+    <!-- Logo / Studio Name -->
+    <h1 class="neon-text text-5xl md:text-7xl font-extrabold mb-6">D3VALEXSTUDIO</h1>
+
+    <!-- Tagline -->
+    <p class="text-gray-300 text-lg md:text-2xl mb-10">
+      Crafting Worlds, One Game at a Time
+    </p>
+
+    <!-- Navigation Buttons -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#home"
+         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
+        Home
+      </a>
+      <a href="#games"
+         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
+        Games
+      </a>
+      <a href="#about"
+         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
+        About
+      </a>
+      <a href="#contact"
+         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
+        Contact
+      </a>
+    </div>
+  </section>
+</body>
+</html>
