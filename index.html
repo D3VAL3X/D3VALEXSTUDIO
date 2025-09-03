@@ -16,11 +16,24 @@
     .neon-btn {
       background: linear-gradient(90deg, #00fff7, #b026ff);
       box-shadow: 0 0 10px #00fff7, 0 0 20px #b026ff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .neon-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00fff7, 0 0 40px #b026ff;
     }
   </style>
 </head>
-<body class="h-screen flex items-center justify-center">
-  <section class="text-center px-4">
+<body class="h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Video Background -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div> <!-- dark overlay -->
+
+  <!-- Hero Content -->
+  <section class="text-center px-4 relative z-10">
     <!-- Logo / Studio Name -->
     <h1 class="neon-text text-5xl md:text-7xl font-extrabold mb-6">D3VALEXSTUDIO</h1>
 
@@ -31,22 +44,10 @@
 
     <!-- Navigation Buttons -->
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="#home"
-         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
-        Home
-      </a>
-      <a href="#games"
-         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
-        Games
-      </a>
-      <a href="#about"
-         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
-        About
-      </a>
-      <a href="#contact"
-         class="neon-btn text-white font-semibold py-3 px-8 rounded-full transition-transform duration-200 hover:scale-105">
-        Contact
-      </a>
+      <a href="#home" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Home</a>
+      <a href="#games" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Games</a>
+      <a href="#about" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">About</a>
+      <a href="#contact" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Contact</a>
     </div>
   </section>
 </body>
