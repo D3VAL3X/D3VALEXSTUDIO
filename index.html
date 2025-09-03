@@ -29,9 +29,23 @@
     }
   </style>
 </head>
-<body class="relative overflow-hidden">
+<body class="relative overflow-x-hidden">
+  <!-- Optional Fixed Header -->
+  <header class="fixed top-0 left-0 w-full bg-black/80 z-20 p-4 text-white flex justify-between items-center">
+    <div class="font-bold text-xl">D3VALEXSTUDIO</div>
+    <nav class="flex gap-4">
+      <a href="#hero" class="hover:text-cyan-400">Home</a>
+      <a href="#games" class="hover:text-cyan-400">Games</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Spacer so content starts below header -->
+  <div class="h-20"></div>
+
   <!-- Hero Section -->
-  <section class="relative h-screen w-full flex flex-col items-center justify-center text-center">
+  <section id="hero" class="relative w-full flex flex-col items-center justify-center text-center min-h-[80vh]">
     <!-- Video Background -->
     <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
       <source src="your-video.mp4" type="video/mp4">
@@ -42,16 +56,11 @@
     <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-0"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 px-4">
-      <!-- Studio Name -->
+    <div class="relative z-10 px-4 mt-10">
       <h1 class="neon-text text-5xl md:text-7xl font-extrabold mb-6">D3VALEXSTUDIO</h1>
-
-      <!-- Tagline -->
       <p class="text-gray-300 text-lg md:text-2xl mb-10">
         Crafting Worlds, One Game at a Time
       </p>
-
-      <!-- Navigation Buttons -->
       <div class="flex flex-wrap justify-center gap-4">
         <a href="#home" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Home</a>
         <a href="#games" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Games</a>
@@ -59,6 +68,14 @@
         <a href="#contact" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Contact</a>
       </div>
     </div>
+  </section>
+
+  <!-- Sample Scrollable Content -->
+  <section class="p-10 bg-gray-900 text-white">
+    <h2 class="text-3xl mb-4">More Content Below</h2>
+    <p class="max-w-2xl mx-auto">
+      This is sample content so you can scroll down and see the hero section appear underneath the header.
+    </p>
   </section>
 </body>
 </html>
