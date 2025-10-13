@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Year 1 Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: radial-gradient(circle at top, #080808);
+      color: teal;
+    }
 
+    .neon-text {
+      color: #00fff7;
+      text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #b026ff;
+    }
+
+    .neon-btn {
+      background: linear-gradient(90deg, #00fff7, #b026ff);
+      box-shadow: 0 0 10px #00fff7, 0 0 20px #b026ff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .neon-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00fff7, 0 0 40px #b026ff;
+    }
+
+    .top-bar {
+            width: 100%;
+            height: 60px;
+            background: url('topbar.PNG') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 60px;
+            position: relative; /* Keeps buttons above the background */
+        }
+    .container{
+      display: flex;
+      align-items: flex-start:
+      gap: 40px;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="nav-buttons">
+             <a href="index.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Home</a>
+        <a href="games.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Games</a>
+        <a href="#about" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">About</a>
+        <a href="#contact" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Contact</a>
+        </div>
+    </div>
+ 
+
+   
+
+
+
+
+  <!-- Scrollable Content Below -->
+  <section class="p-10 ">
+   <div class="nav-buttons">
+             <a href="year1.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Year 1</a>
+        <a href="year2.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Year 2</a>
+        <a href="personalgames.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Personal Games</a>
+        
+        </div>
+   
+  </section>
+
+
+<section class="p-10">
+  <h2 class="neon-text text-5xl md:text-7xl font-extrabold mb-6">2D Platformer</h2>
+
+</section>
+
+<section class="p-10" style="padding:40px;">
+  <div class="container" style="display: flex; align-items: flex-start; gap: 20px;">
+    <iframe
+      width="450"
+      height="315"
+      src="https://www.youtube.com/embed/_bLfgWeAuqo"
+      title="Youtube Media Player"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+    <p style="flex-grow: 1; font-size: 30px; line-height: 1.4; margin: 0;">
+      For my first project, I had to create a 2d platformer with the basic mechanics of walk, run, jump with collectible objects and jump pads. I used premade art as I'm not the greatest at 2D art, so I mainly focused on the coding side of the project. I created a narrative system and custom boss fight with multiple attacks for this project. I enjoyed creating this game as I was able to experiment with different types of movement mechanics when chained together.
+    </p>
+  </div>
+</section>
+
+
+
+ 
+
+</body>
+</html>
