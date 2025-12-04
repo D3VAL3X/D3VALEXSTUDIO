@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: radial-gradient(circle at top, #080808);
+      color: teal;
+    }
+    
+    .neon-text {
+      color: #00fff7;
+      text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #b026ff;
+    }
 
+    .neon-btn {
+      background: linear-gradient(90deg, #00fff7, #b026ff);
+      box-shadow: 0 0 10px #00fff7, 0 0 20px #b026ff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .neon-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00fff7, 0 0 40px #b026ff;
+    }
+
+    .top-bar {
+            width: 100%;
+            height: 60px;
+            background: url('topbar.PNG') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+            position: relative; /* Keeps buttons above the background */
+        }
+  </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="nav-buttons">
+             <a href="index.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Home</a>
+        <a href="games.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Games</a>
+        <a href="soundbyte.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Sound Byte</a>
+        <a href="nextgen.html" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">NextGen</a>
+        <a href="#contact" class="neon-btn text-white font-semibold py-3 px-8 rounded-full">Contact</a>
+        </div>
+    </div>
+ 
+
+   
+
+
+
+
+ 
+
+   <section class="p-10 ">
+    <p class="text-teal-300 text-lg md:text-2xl mb-10">
+      Welcome to my Games page! This section is a hub to showcase everything ive been creating as part of game development journey. The next three sub-pages showcase a mix of projects a mix of projects from my college coursework, starting with Year 1 and Year 2 assignments. Each piece will showcase different skills I've picked up on and improved on going from protypes to finished games, giving a showcase of everything I've worked on.
+    </p>
+     <p class="text-teal-300 text-lg  md:text-2x1 mb-10">
+       Alongside my college projects you will also find all the personal games I've created and worked on, These passionate projects have led to me being able to explore different style of games and experiment with tools, and push my creative ability to improve my work flow and skills within this area of study.
+    </p>
+   
+  </section>
+
+ 
+
+</body>
+</html>
